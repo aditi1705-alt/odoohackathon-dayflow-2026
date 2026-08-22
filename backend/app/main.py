@@ -2,9 +2,10 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.routes.auth import router as auth_router
+from app.routes import attendance, payroll
 
 
-app = FastAPI(title="Dayflow API")
+app = FastAPI(title="DayFlow API")
 
 
 app.add_middleware(
@@ -17,10 +18,5 @@ app.add_middleware(
 
 
 app.include_router(auth_router)
-
-
-@app.get("/")
-def root():
-    return {
-        "message": "Dayflow API is running"
-    }
+app.include_router(attendance.router)
+app.include_router(payroll.router)
