@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DayFlow - Sign Up</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/authentication.css">
+</head>
+
+<body>
+
+<div class="auth-page">
+
+    <section class="auth-showcase">
+
+        <div>
+
+            <a class="brand" href="login.html">
+                <span class="brand-mark">D</span>
+                <span>DayFlow</span>
+            </a>
+
+            <h1>Work, attendance and payroll in one place.</h1>
+
+            <p>
+                A focused HR workspace for employees and teams.
+                Keep daily operations clear without filling the
+                screen with noise.
+            </p>
+
+            <div class="auth-pills">
+                <span class="auth-pill">Attendance</span>
+                <span class="auth-pill">Payroll</span>
+                <span class="auth-pill">Employee records</span>
+            </div>
+
+        </div>
+
+        <div class="auth-bottom">
+            DayFlow HRMS
+        </div>
+
+    </section>
+
+
+    <section class="auth-side">
+
+        <div class="auth-card">
+
+            <h2>Create your account</h2>
+
+            <p>Set up your DayFlow account in a few seconds.</p>
+
+            <form id="signup-form">
+
+                <div class="field">
+                    <label for="email">Email</label>
+
+                    <input
+                        id="email"
+                        type="email"
+                        autocomplete="email"
+                        placeholder="you@company.com"
+                        required
+                    >
+                </div>
+
+
+                <div class="field">
+                    <label for="password">Password</label>
+
+                    <input
+                        id="password"
+                        type="password"
+                        autocomplete="new-password"
+                        minlength="8"
+                        placeholder="Create a password"
+                        required
+                    >
+                </div>
+
+
+                <div class="field">
+                    <label for="confirm-password">
+                        Confirm password
+                    </label>
+
+                    <input
+                        id="confirm-password"
+                        type="password"
+                        autocomplete="new-password"
+                        minlength="8"
+                        placeholder="Repeat your password"
+                        required
+                    >
+                </div>
+
+
+                <p id="signup-message" class="auth-message"></p>
+
+
+                <button
+                    class="btn primary auth-submit"
+                    id="signup-button"
+                    type="submit"
+                >
+                    Create account
+                </button>
+
+            </form>
+
+
+            <div class="auth-switch">
+                Already have an account?
+                <a href="login.html">Sign in</a>
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+
+<script src="../js/app.js"></script>
+<script src="../js/authentication/signup.js"></script>
+
+</body>
+</html>
